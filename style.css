@@ -12,6 +12,7 @@
     align-items: center;
     background: linear-gradient(185deg, #3b3ee3,#045610);
     padding: 10px;
+    box-shadow: none;
 }
 .todo-app{
     width:40%;
@@ -83,8 +84,8 @@ ul li{
 ul li::before{
     content: '';
     position: absolute;
-    width: 3vw;
-    height: 3vw;
+    width: 2vw;
+    height: 2vw;
     border-radius: 50%;
     background-image: url(/images/unchecked.png);
     background-size: cover;
