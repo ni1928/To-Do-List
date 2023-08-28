@@ -3,24 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List Application</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Fira+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+    <title>To-Do List</title>
 </head>
 <body>
+    <header>
+        <h1>To-Do List</h1>
+        <form id="new-task-form">
+          <input type="text"
+          id="new-task-input"
+          placeholder="What do you have planned?"/>
+          <input type="submit"
+          id="new-task-submit"
+          value="Add task"/>
+        </form>
+    </header>
     
-    <div class="container">
-        <div class="todo-app">
-            <h2>To-Do List <img src="/images/icons8-note-64.png" alt="icon note"> </h2>  
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Enter Your Text Here">
-                <button onclick="addTask()">ADD</button>
+    <main>
+        <section class="task-list">
+            <h2>Tasks</h2>
+            <div id ="tasks">
+                
+                <!-- <div class="task">
+                    <div class="content">
+                        <input type="text"
+                        class="text"
+                        value="My shiny task"
+                        readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div> -->
+
             </div>
-            <ul id="list-container">
-                <!-- <li class="checked">Task 0</li>
-                <li>Task 1</li> -->
-            </ul>
-        </div>
-    </div>
-    <script src="script.js"></script>
+        </section>
+    </main>
+    
+    <script src="main.js"></script>
+   
 </body>
 </html>
